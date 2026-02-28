@@ -1,0 +1,36 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "product_name": {
+      "type": "string",
+      "description": "Name of the weighing scale"
+    },
+    "capacity": {
+      "type": "number",
+      "enum": [
+        10,
+        20,
+        30,
+        50,
+        100,
+        300,
+        600,
+        1500,
+        2000
+      ],
+      "description": "Weight capacity in kg"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Brand name"
+    },
+    "model": {
+      "type": "string",
+      "description": "Model number"
+    }
+  },
+  "required": [
+    "product_name"
+  ]
+}
