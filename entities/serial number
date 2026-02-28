@@ -1,0 +1,85 @@
+{
+  "name": "SerialNumber",
+  "type": "object",
+  "properties": {
+    "brand": {
+      "type": "string",
+      "description": "Brand name"
+    },
+    "model": {
+      "type": "string",
+      "description": "Model number"
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Weight capacity in kg"
+    },
+    "serial_number": {
+      "type": "string",
+      "description": "Unique serial number"
+    },
+    "purchase_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of purchase"
+    },
+    "selling_price": {
+      "type": "number",
+      "description": "Selling price"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "In Stock",
+        "Sold"
+      ],
+      "default": "In Stock",
+      "description": "Current status"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "Customer name"
+    },
+    "customer_mobile": {
+      "type": "string",
+      "description": "Customer mobile number"
+    },
+    "sale_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of sale"
+    },
+    "bill_book_number": {
+      "type": "string",
+      "description": "Bill book number"
+    },
+    "bill_number": {
+      "type": "string",
+      "description": "Bill number"
+    },
+    "warranty_start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Warranty start date"
+    },
+    "warranty_end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Warranty end date"
+    },
+    "warranty_status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Expired",
+        "N/A"
+      ],
+      "default": "N/A",
+      "description": "Warranty status"
+    }
+  },
+  "required": [
+    "serial_number",
+    "status"
+  ]
+}
